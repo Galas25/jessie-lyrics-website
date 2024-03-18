@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%; /* Set height to 100% */
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.main-div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container2 {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch; /* Stretch items vertically */
+    width: 100%;
+    
+}
+
+.content-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 100%;
+    background-color: #FFF67E;
+    display: flex;
+    padding-bottom: 1vh;
+}
+
+.content-container img {
+    width: 20%;
+    height: auto;
+    padding: 1%;
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 1rem; /* Add padding to compensate for the removed margin */
+}
+
+
+*/
+.blue-box {
+    
+    padding: 1rem; /* Add padding to create space inside the box */
+    display: flex; /* Use flex to align items vertically */
+    flex-direction: row; /* Set flex direction to column */
+    flex-grow: 1; /* Use flex-grow to occupy remaining vertical space */
+}
+
+.lyrics {
+    flex: 1; /* Use flex to distribute space evenly between paragraphs */
+    margin-right: 1rem; /* Add margin between the paragraphs */
+}
+.lyrics:last-child {
+    margin-right: 0; /* Remove margin from the last paragraph */
+}
+
+h1 {
+    font-size: 7rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.1rem;
+    }
+    .content-container img {
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+}
+
+a {
+    font-size: 2rem;
+    color: rgb(80, 61, 178);
+    text-decoration: none;
+    width: 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+ol {
+    text-decoration: none;
+    list-style: none;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1vh;
+
+}
+#p {
+
+    margin-top: 10vh;
+}
+hr{
+    border: 1px solid black;
+}
+audio{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.part{
+    font-size: 2rem;
+    text-align: center;
+}
